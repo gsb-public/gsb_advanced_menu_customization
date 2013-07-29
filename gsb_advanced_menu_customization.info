@@ -1,0 +1,6 @@
+name = GSB Advanced Menu Customization
+core = 7.x
+package = GSB
+version = 7.x-1.0
+project = gsb_advanced_menu_customization
+dependencies[] = advanced_menu_menu_admin
