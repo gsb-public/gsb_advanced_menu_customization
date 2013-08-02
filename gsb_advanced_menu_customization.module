@@ -13,7 +13,7 @@ function gsb_advanced_menu_customization_form_node_form_alter(&$form, &$form_sta
   // Hide the 'Menu Settings' tab for the node edit form if the user
   // doesn't the either the administrator or marketing_admin roles
 
-  if (!in_array('marketing_admin', $user->roles) && !in_array('administrator', $user->roles)) {
+  if (!in_array('section editor', $user->roles) && !in_array('marketing_admin', $user->roles) && !in_array('administrator', $user->roles)) {
     $form['menu']['#access'] = FALSE;
   }
 
